@@ -1,0 +1,129 @@
+.nav-container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 0px;
+
+}
+
+.nav-bottom {
+    border-bottom: 0.3px solid #F2F2F4;
+}
+
+.logo {
+    width: 170px;
+}
+
+.cart {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0rem;
+    cursor: pointer;
+}
+
+.cart-img {
+    width: 25px;
+    min-width: 25px;
+    height: 21px;
+}
+
+.cart-p{
+    font-family: FF Bau Regular,sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: .6875rem;
+    font-size: .8125rem;
+    margin-left: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.x-button {
+    width: 13px;
+}
+
+.url-image {
+    height: 50px;
+}
+
+
+.qtyminus {
+    border-right: 0;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.qtyminus:focus{
+    outline: none;
+}
+
+.qtyplus {
+    border-left: 0;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+.qtyplus:focus{
+    outline: none;
+}
+
+.qty {
+    width: 28px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 0;
+    border-left: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.qty:focus {
+    outline: none;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.top-border {
+    border-top: 1px solid #4B5548;
+}
+
+.button-outline {
+    width: 100%;
+    color: #4B5548;
+    background-color: #fff;
+    border: 0.5px solid #4B5548;
+    height: 50px;
+}
+
+.button-outline:focus{
+    outline: none;
+}
+
+
+.button-solid {
+    width: 100%;
+    color: #fff;
+    background-color: #4B5548;
+    border: none;
+    height: 50px;
+}
+
+.button-solid:focus{
+    outline: none;
+}
