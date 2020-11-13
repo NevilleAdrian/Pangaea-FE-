@@ -98,6 +98,7 @@
 
 .price {
     font-size: 18px;
+    text-align: center;
 }
 
 .top-border {
@@ -128,3 +129,22 @@
 .button-solid:focus{
     outline: none;
 }
+
+@media(max-width: 768px){
+    .price {
+        text-align: left;
+    }
+  }
+
+  @media(max-width: 375px){
+    .button-outline {
+       font-size: 12px;
+    }
+    .button-solid {
+       font-size: 12px;
+    }
+    
+  }
+
+
+

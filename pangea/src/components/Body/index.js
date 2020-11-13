@@ -82,6 +82,11 @@ export default function Body() {
         }
     }
 
+    //remove item from product
+    const removeItem = (id) => {
+        setCartItems(cartItems.filter(a => a.id !== id))
+    }
+
     //Decrement individual Cart Item
     const decrement = (id) => {
         if (isInCart(id)) {
@@ -108,13 +113,11 @@ export default function Body() {
             document.body.style.overflow = "auto";
         }
         setShowNav(shouldShow)
+        console.log(showNav)
     }
 
-    //remove item from product
 
-    const removeItem = (id) => {
-        setCartItems(cartItems.filter(a => a.id !== id))
-    }
+
 
 
 
@@ -135,7 +138,7 @@ export default function Body() {
                         {products.map((item) => (
                             <div key={item.id} className="col-md-6 col-lg-4 col-sm-6 margin-bottom">
                                 <div className="text-center">
-                                    <img className="img-fluid img-height" src={item.image_url} />
+                                    <img alt="product-img" className="img-fluid img-height" src={item.image_url} />
                                 </div>
 
                                 <p className="text-center title">{item.title}</p>

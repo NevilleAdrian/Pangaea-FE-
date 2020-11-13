@@ -124,3 +124,14 @@
 .input-dropdown:focus{
     outline: none;
 }
+
+@media(max-width: 768px){
+    .overlay {
+        width: 100%;
+    }
+
+    .overlay-fixed {
+      width: 100%;
+    }
+    
+  }
