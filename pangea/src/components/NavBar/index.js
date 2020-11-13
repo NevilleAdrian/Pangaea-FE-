@@ -12,7 +12,7 @@ import { formattedCurrency } from '../../utils'
 
 
 
-export default function NavBar({ number = 0, items, increment, decrement, displayNav, showNav}) {
+export default function NavBar({ number = 0, items, increment, decrement, displayNav, showNav, remove}) {
 
   const curr = useSelector(state => state.currency);
 
@@ -88,7 +88,7 @@ export default function NavBar({ number = 0, items, increment, decrement, displa
                                                 <p>{item.title}</p>
                                             </div>
                                             <div className="col-md-6">
-                                                <img alt="cancel" className="img-fluid x-button  float-md-right" src={X} />
+                                                <img onClick={() => remove(item.id)} alt="cancel" className="img-fluid x-button  float-md-right" src={X} />
                                             </div>
 
                                         </div>

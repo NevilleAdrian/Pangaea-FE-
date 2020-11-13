@@ -48,6 +48,7 @@
 
 .x-button {
     width: 13px;
+    cursor: pointer;
 }
 
 .url-image {

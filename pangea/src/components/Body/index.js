@@ -87,7 +87,7 @@ export default function Body() {
         if (isInCart(id)) {
             const cartItem = cartItems.find(item => item.id === id)
             if (cartItem.count === 1) {
-                setCartItems(cartItems.filter(a => a.id !== id))
+                removeItem(id)
             }
             else {
                 setCartItems(cartItems.map(a => a.id === id ? { ...a, count: a.count - 1 } : a))
@@ -110,11 +110,17 @@ export default function Body() {
         setShowNav(shouldShow)
     }
 
+    //remove item from product
+
+    const removeItem = (id) => {
+        setCartItems(cartItems.filter(a => a.id !== id))
+    }
+
 
 
     return (
         <>
-            <NavBar showNav={showNav} displayNav={displayNav} increment={increment} decrement={decrement} number={cartItems.length} items={products.filter(product => isInCart(product.id)).map(product => addCountToProduct(product))} />
+            <NavBar remove={removeItem} showNav={showNav} displayNav={displayNav} increment={increment} decrement={decrement} number={cartItems.length} items={products.filter(product => isInCart(product.id)).map(product => addCountToProduct(product))} />
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-6">
